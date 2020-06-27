@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestParallelSuite" parallel="tests">
+  <test thread-count="5" name="firefoxTest" parallel="tests">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="testngprograms.GoogleSuggestionTest"/>
+      </classes>
+  </test> <!-- TestParallelTest -->
+  
+  <test thread-count="5" name="ChromelTest" parallel="tests">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+     
+      <class name="testngprograms.ZKDemoTest"/>
+     </classes>
+  </test> <!-- TestParallelTest -->
+  
+  
+  <test thread-count="5" name="IETest" parallel="tests">
+  <parameter name="browser" value="ie"></parameter>
+    <classes>
+      <class name="testngprograms.CheckboxCountTest"/>
+    </classes>
+  </test> <!-- TestParallelTest -->
+  
+  
+</suite> <!-- TestParallelSuite -->

@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>TestNG:  ChromelTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromelTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 13 17:08:49 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>82 seconds (82879 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testngprograms.ZKDemoTest.buttonTest()'><b>buttonTest</b><br>Test class: testngprograms.ZKDemoTest<br>Test method: fetching all the button names<br/>
+<a href="#Output-1842678694" onClick='toggleBox("Output-1842678694", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1842678694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1842678694">
+Started executing the buttonTest<br/>
+click on Button link in left panel<br/>
+verify the page title<br/>
+fetch all the buttons into collection<br/>
+Number of buttons:11<br/>
+button Name:Just Label<br/>
+button Name:<br/>
+button Name:Icon with Label<br/>
+button Name:Reversed Order<br/>
+button Name:Vertical<br/>
+button Name:Reverse<br/>
+button Name:Left<br/>
+button Name:Right<br/>
+button Name:Above<br/>
+button Name:Below<br/>
+button Name:<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>testngprograms.ZKDemoTest@1f554b06</td></tr>
+<tr>
+<td title='testngprograms.ZKDemoTest.checkboxTest()'><b>checkboxTest</b><br>Test class: testngprograms.ZKDemoTest<br>Test method: checking all the checkboxes<br/>
+<a href="#Output-398463543" onClick='toggleBox("Output-398463543", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-398463543" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-398463543">
+Started executing the checkboxTest<br/>
+click on Checkbox link in left panel<br/>
+verify the page title<br/>
+fetch all thecheckboxes into collection<br/>
+Number of checkboxes:5<br/>
+checked checkboxes are: Border Box Table Portal Column<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>testngprograms.ZKDemoTest@1f554b06</td></tr>
+<tr>
+<td title='testngprograms.CheckboxCountTest.checkedCheckboxCountTest()'><b>checkedCheckboxCountTest</b><br>Test class: testngprograms.CheckboxCountTest</td>
+<td></td>
+<td>1</td>
+<td>testngprograms.CheckboxCountTest@d44fc21</td></tr>
+<tr>
+<td title='testngprograms.GoogleSuggestionTest.googleSuggestionTest()'><b>googleSuggestionTest</b><br>Test class: testngprograms.GoogleSuggestionTest</td>
+<td></td>
+<td>15</td>
+<td>testngprograms.GoogleSuggestionTest@2b552920</td></tr>
+<tr>
+<td title='testngprograms.ZKDemoTest.radioButtonTest()'><b>radioButtonTest</b><br>Test class: testngprograms.ZKDemoTest<br>Test method: select few radio buttons<br/>
+<a href="#Output-2125079233" onClick='toggleBox("Output-2125079233", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2125079233" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2125079233">
+Started executing the radioButtonTest<br/>
+click on Radio Button link in left panel<br/>
+verify the page title<br/>
+Select the Performance radio button<br/>
+Select the Forum radio button<br/>
+Select the Developer Guide radio button<br/>
+fetch the Feature value<br/>
+Feature value is::Performance<br/>
+fetch the Web Site value<br/>
+Web Site value is::ZK Demo<br/>
+fetch the Documentation value<br/>
+Feature value is::Developer Guide<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>testngprograms.ZKDemoTest@1f554b06</td></tr>
+<tr>
+<td title='testngprograms.CheckboxCountTest.totalCheckboxCountTest()'><b>totalCheckboxCountTest</b><br>Test class: testngprograms.CheckboxCountTest</td>
+<td></td>
+<td>1</td>
+<td>testngprograms.CheckboxCountTest@d44fc21</td></tr>
+<tr>
+<td title='testngprograms.ZKDemoTest.tweetPopupTest()'><b>tweetPopupTest</b><br>Test class: testngprograms.ZKDemoTest<br>Test method: handing the tweet popup test<br/>
+<a href="#Output-414812268" onClick='toggleBox("Output-414812268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-414812268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-414812268">
+Started executing the tweetPopupTest<br/>
+click on Date and Time Picker link in left panel<br/>
+verify the page title<br/>
+identify the iframe<br/>
+Switch to the iframe element<br/>
+click on Tweet button<br/>
+fetch all window ids<br/>
+parent window id-->CDwindow-E47B737E680591C026DC0B2C80DA73DD<br/>
+child window id -->CDwindow-4018CD22A986D6A61D5102730F5A49C4<br/>
+switch to child window<br/>
+type the email in tweet popup email editbox<br/>
+close the child window<br/>
+switch back to parent window<br/>
+clear the content in date editbox<br/>
+type the value in dateeditbox<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>testngprograms.ZKDemoTest@1f554b06</td></tr>
+<tr>
+<td title='testngprograms.CheckboxCountTest.unCheckedCheckboxCountTest()'><b>unCheckedCheckboxCountTest</b><br>Test class: testngprograms.CheckboxCountTest</td>
+<td></td>
+<td>0</td>
+<td>testngprograms.CheckboxCountTest@d44fc21</td></tr>
+</table><p>
+</body>
+</html>

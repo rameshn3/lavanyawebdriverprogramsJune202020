@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ParametersSuite]">
+  <test thread-count="5" name="ParametersTest(failed)">
+    <parameter name="pwd" value="welcome123$"/>
+    <parameter name="email" value="rameshqaonline@gmail.com"/>
+    <classes>
+      <class name="testngprograms.DependsOnMethodsDemo">
+        <methods>
+          <include name="linkedinHomeTest"/>
+          <include name="launchBrowser"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testngprograms.DependsOnMethodsDemo -->
+    </classes>
+  </test> <!-- ParametersTest(failed) -->
+</suite> <!-- Failed suite [ParametersSuite] -->
